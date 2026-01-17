@@ -1,0 +1,38 @@
+{
+  "movies": [
+    "The Matrix",
+    "Inception",
+    "Pulp Fiction",
+    "The Dark Knight",
+    "Interstellar",
+    "Parasite",
+    "Spider-Man: Into the Spider-Verse",
+    "The Shawshank Redemption",
+    "Everything Everywhere All at Once",
+    "Dune"
+  ],
+  "todo": [
+    "Clean room",
+    "Do assignment",
+    "Cook dinner",
+    "Take a shower",
+    "Meet a friend",
+    "Do exercise",
+    "Do laundry",
+    "Wash the dishes",
+    "Cancel subscription",
+    "Go on a walk"
+  ],
+  "food": [
+    "Pizza",
+    "Burgers",
+    "Ramen",
+    "Chicken Noodle Soup",
+    "Fried Rice",
+    "Curry",
+    "Mushroom Soup",
+    "Pasta",
+    "Tsuivan",
+    "Khuushuur"
+  ]
+}
