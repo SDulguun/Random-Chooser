@@ -77,13 +77,13 @@ st.set_page_config(page_title="Random Chooser", page_icon="🎲", layout="center
 st.markdown("""
 <style>
     .stApp {
-        background: linear-gradient(135deg, #FFF5F9 0%, #E6E6FA 50%, #FFE4EC 100%);
+        background: linear-gradient(135deg, #2D1B3D 0%, #1A1025 50%, #2D1B3D 100%);
     }
 
     .main-header {
         text-align: center;
         padding: 20px;
-        background: linear-gradient(90deg, #9B4D7C, #6B4D8A);
+        background: linear-gradient(90deg, #E8A4C8, #B8A4D8);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 3rem;
@@ -92,33 +92,33 @@ st.markdown("""
 
     .subtitle {
         text-align: center;
-        color: #5C4668;
+        color: #C8B4D8;
         font-style: italic;
         margin-bottom: 30px;
     }
 
     .stTabs [data-baseweb="tab-list"] {
         gap: 10px;
-        background-color: rgba(230, 230, 250, 0.5);
+        background-color: rgba(45, 27, 61, 0.8);
         padding: 10px;
         border-radius: 15px;
     }
 
     .stTabs [data-baseweb="tab"] {
-        background-color: #FFE4EC;
+        background-color: #3D2B4D;
         border-radius: 10px;
-        color: #4A3055;
+        color: #E8D4F0;
         padding: 10px 20px;
         font-weight: 500;
     }
 
     .stTabs [aria-selected="true"] {
-        background-color: #E6A4C4;
+        background-color: #9B4D7C;
         color: white;
     }
 
     div.stButton > button {
-        background: linear-gradient(90deg, #E6A4C4, #B19CD9);
+        background: linear-gradient(90deg, #9B4D7C, #6B4D8A);
         color: white;
         border: none;
         border-radius: 20px;
@@ -129,17 +129,17 @@ st.markdown("""
 
     div.stButton > button:hover {
         transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(230, 164, 196, 0.4);
+        box-shadow: 0 5px 15px rgba(155, 77, 124, 0.5);
     }
 
     .result-box {
-        background: linear-gradient(135deg, #FFE4EC, #E6E6FA);
+        background: linear-gradient(135deg, #3D2B4D, #2D1B3D);
         padding: 30px;
         border-radius: 20px;
         text-align: center;
         font-size: 2rem;
-        color: #3D2B4A;
-        border: 3px solid #E6A4C4;
+        color: #F0E4F8;
+        border: 3px solid #9B4D7C;
         margin: 20px 0;
         font-weight: 600;
     }
@@ -151,32 +151,32 @@ st.markdown("""
     }
 
     .stExpander {
-        background-color: rgba(255, 228, 236, 0.5);
+        background-color: rgba(61, 43, 77, 0.7);
         border-radius: 15px;
-        border: 1px solid #E6A4C4;
+        border: 1px solid #9B4D7C;
     }
 
     .spin-box {
-        background: linear-gradient(135deg, #FFE4EC, #E6E6FA);
+        background: linear-gradient(135deg, #3D2B4D, #2D1B3D);
         padding: 30px;
         border-radius: 20px;
         text-align: center;
         font-size: 1.8rem;
-        color: #3D2B4A;
-        border: 3px solid #B19CD9;
+        color: #F0E4F8;
+        border: 3px solid #6B4D8A;
         margin: 20px 0;
         font-weight: 600;
         animation: pulse 0.15s ease-in-out;
     }
 
     .final-result {
-        background: linear-gradient(135deg, #FFE4EC, #E6E6FA);
+        background: linear-gradient(135deg, #4D2B5D, #3D1B4D);
         padding: 30px;
         border-radius: 20px;
         text-align: center;
         font-size: 2rem;
-        color: #3D2B4A;
-        border: 3px solid #E6A4C4;
+        color: #F8E8FF;
+        border: 3px solid #9B4D7C;
         margin: 20px 0;
         font-weight: 700;
         animation: celebrate 0.5s ease-out;
@@ -197,9 +197,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header with cute image
-col1, col2, col3 = st.columns([1, 2, 1])
-with col2:
-    st.image("https://em-content.zobj.net/source/apple/391/game-die_1f3b2.png", width=120)
+st.markdown('''
+<div style="display: flex; justify-content: center;">
+    <img src="https://em-content.zobj.net/source/apple/391/game-die_1f3b2.png" width="120">
+</div>
+''', unsafe_allow_html=True)
 
 st.markdown('<h1 class="main-header">Random Chooser</h1>', unsafe_allow_html=True)
 st.markdown('<p class="subtitle">Can\'t decide? Let fate choose for you! ✨</p>', unsafe_allow_html=True)
